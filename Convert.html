@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curreny Exchange</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/198fffef97.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <div class="Container">
+        <div class="name"><center>Exchange rate</center></div>
+        <div id="exchangerate" onchange=showRate()>
+            
+        </div>
+            <label>Amount</label> &nbsp;
+            <input type="number" placeholder="Enter Amount" class="amount" id="amount">
+        <div class="op">
+        <label>From</label><br>
+        <select class="first" id="first" onchange=change()>
+            <option value="USD">United States Dollar</option>
+            <option value="GBP">British Pound</option>
+            <option value="CAD">Canadian Dollar</option>
+            <option value="AUD">Australian Dollar</option>
+            <option value="JPY">Japanese Yen</option>
+            <option value="CNY">Chinese Yuan</option>
+            <option value="EUR">Germany Euro</option>
+            <option value="EUR">France Euro</option>
+            <option value="BRL">Brazilian Real</option>
+            <option value="INR">Indian Rupee</option>
+            <option value="MXN">Mexican Peso</option>
+            <option value="ZAR">South African Rand </option>
+            <option value="SAR">Saudi Riyal</option>
+            <option value="RUB">Russian Ruble</option>
+            <option value="CHF">Swiss Franc</option>
+            <option value="NZD">New Zealand Dollar</option>
+            <option value="SGD">Singapore Dollar</option>
+            <option value="KRW">South Korean Won</option>
+            <option value="PKR" selected>Pakistani Rupees</option>
+            <option value="EUR">Italy Euro</option>
+            <option value="EUR">Spain Euro</option>
+          </select>
+          <button type="button" id="convert" onclick=swapamount()>
+            ⬅➡
+          </button>
+          <label class="in">To</label>
+          <select class="Second" id="Second" onchange=changeInto()>
+            <option value="USD" selected>United States Dollar</option>
+            <option value="GBP">British Pound</option>
+            <option value="CAD">Canadian Dollar</option>
+            <option value="AUD">Australian Dollar</option>
+            <option value="JPY">Japanese Yen</option>
+            <option value="CNY">Chinese Yuan</option>
+            <option value="EUR">Germany Euro</option>
+            <option value="EUR">France Euro</option>
+            <option value="BRL">Brazilian Real</option>
+            <option value="INR">Indian Rupee</option>
+            <option value="MXN">Mexican Peso</option>
+            <option value="ZAR">South African Rand </option>
+            <option value="SAR">Saudi Riyal</option>
+            <option value="RUB">Russian Ruble</option>
+            <option value="CHF">Swiss Franc</option>
+            <option value="NZD">New Zealand Dollar</option>
+            <option value="SGD">Singapore Dollar</option>
+            <option value="KRW">South Korean Won</option>
+            <option value="PKR" >Pakistani Rupees</option>
+            <option value="EUR">Italy Euro</option>
+            <option value="EUR">Spain Euro</option>
+          </select>
+        </div>
+            <button type="button" onclick=convert(),time()>Convert</button>
+        <div class="Answer">
+            <input type="number"placeholder="Result" id="Result" >
+        </div>
+        <div class="time" id="time">
+
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
